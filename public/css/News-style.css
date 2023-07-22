@@ -1,0 +1,305 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+
+.Subscribe
+{
+    position: relative;
+}
+.event-btn
+{
+    padding: 15px 40px;
+    color:rgb(90, 90, 255);
+    border-radius: 10%;
+    background-color: white;
+    border-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
+}
+
+.event-region {
+    font-family: serif;
+    font-weight: 600;
+}
+
+.event-btn
+{
+    position: absolute;
+    top: 40%;
+    left: 47%;
+}
+.Subscribe
+{
+    width: 1270px;
+    height: 210px;
+    margin-left: 130px;
+    background-color: #8dc63f;
+}
+.Subscribe img
+{
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 1270px;
+    height: 210px;
+}
+.event-region
+{
+    color:rgb(90, 90, 255);
+    /* #dee2e6 */
+}
+
+
+.event-region {
+ 
+    color:rgb(90, 90, 255);
+  /*  transform: skewX(-15deg);*/
+/*    text-shadow: 0 3px 5px #030303;*/
+ 
+    /*
+              changeColor 4.8s 0.1s ease-in-out infinite;
+              */
+}
+.event-region{
+    animation: shaking 0.6s 0s 3;
+}
+
+@keyframes shaking {
+    0% {
+        transform: skewX(-15deg);
+    }
+    5% {
+        transform: skewX(15deg);
+    }
+    10% {
+        transform: skewX(-15deg);
+    }
+    15% {
+        transform: skewX(15deg);
+    }
+    20% {
+        transform: skewX(-15deg);
+    }
+    25% {
+        transform: skewX(15deg);
+    }
+    30% {
+        transform: skewX(-15deg);
+    }
+    35% {
+        transform: skewX(15deg);
+    }
+    50% {
+        transform: skewX(0deg);
+    }
+    100% {
+        transform: skewX(0deg);
+    }
+}
+.event-region::after
+{
+   content: '';
+   width: 0;
+   height: 3px;
+   background-color: rgb(83, 54, 54);
+   margin: auto;
+   display: block;
+   margin-left: 0px;
+}
+.event-region:hover::after
+{
+  width: 13%;
+  transition: width 0.6s linear;
+  
+}
+.event-region:hover
+{
+  color: rgb(155, 60, 60);
+}
+/*
+@keyframes changeColor {
+    0% {
+        color: #fff;
+    }
+    24% {
+        color: #fff;
+    }
+    25% {
+        color: #f05112;
+    }
+
+    49% {
+        color: #f05112;
+    }
+
+    50% {
+        color: #f029cf;
+    }
+
+    74% {
+        color: #f029cf;
+    }
+    75% {
+        color: #9cdf20;
+    }
+    99% {
+        color: #9cdf20;
+    }
+    100% {
+        color: #3253e2;
+    }
+}
+  
+*/
+
+.Event-Container
+{
+  display: inline-flex;
+  margin-left: 100px;
+}
+.Event-Con-Sub
+{
+  border: 1px solid rgb(220, 213, 213);
+  width: 300px;
+ height: 330px;
+ margin-left: 26px;
+ margin-top: 10px;
+ border-radius:7%;
+
+ /*text-align: center;*/
+background-color: rgb(250, 243, 243);
+
+}
+.Event-Sub-Img img
+{ 
+   width:300px;
+   height:180px;
+    border-top-right-radius: 7%;
+    border-top-left-radius: 7%;
+}
+.Event-Sub-Half
+{
+    height: 150px;
+    width: 300px;
+
+ 
+}
+
+.Event-Sub-Half-Button
+{
+    background-color: rgb(30, 208, 30);
+    border: 1px solid rgb(30, 208, 30);
+    color: white;
+    height: 30px;
+    width: 100px;
+    font-size: 11px;
+    border-radius: 9%;
+    margin-left: 20px;
+    margin-top: 10px;
+   margin-right: 140px;
+}
+/*
+.Event-Sub-Half-Date 
+{
+    font-size: 12px;
+    color:#fff;
+    
+    animation: Event-Sub-Half-Date 1s ease-in-out infinite alternate;
+}
+  
+@-webkit-keyframes Event-Sub-Half-Date{
+    from {
+      text-shadow: 0 0 10px #2fa90a, 0 0 20px #11e434, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #780e0e, 0 0 30rgb(97, 5, 51)da6, 0 0 40px #ff4d50, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+  }
+*/
+.Event-Sub-Half-Date {
+       margin-left: 20px;
+    animation: blinker 1.5s linear infinite;
+   
+    color: red;
+    font-family: sans-serif;
+}
+@keyframes blinker {
+    50% {
+        opacity: 0;
+    }
+}
+/*
+.flood-10 button
+{
+    background-color: rgb(30, 208, 30);
+    border: 1px solid rgb(30, 208, 30);
+    color: white;
+    height: 30px;
+    width: 100px;
+    font-size: 11px;
+    border-radius: 9%;
+   /* margin-top: 10px;*/
+   /*
+   margin-right: 140px;
+}
+*/
+.Event-Sub-Half-Visit-Name p
+{
+    margin-top:10px;
+    margin-left: 20px;
+    margin-right: 15px;
+    
+    font-size: 15px;
+}
+/*
+.flood-911 p
+{
+    margin-top:10px;
+ 
+    padding-left: 0px;
+   
+    font-size: 15px;
+    color: green;
+}
+.Islamabad
+{
+    margin-left: 130px;
+    color:rgb(90, 90, 255);
+    /* #dee2e6 */
+    /*
+}
+*/
+/*
+.Islamabad h1 {
+ 
+    color:rgb(90, 90, 255);
+  /*  transform: skewX(-15deg);*/
+/*    text-shadow: 0 3px 5px #030303;*/
+ 
+    /*
+              changeColor 4.8s 0.1s ease-in-out infinite;
+              *//*
+} 
+.Islamabad h1::after
+{
+   content: '';
+   width: 0;
+   height: 3px;
+   background-color: rgb(83, 54, 54);
+   margin: auto;
+   display: block;
+   margin-left: 0px;
+}
+.Islamabad h1:hover::after
+{
+  width: 7%;
+  transition: width 0.6s linear;
+  
+}
+.Islamabad h1:hover
+{
+  color: rgb(155, 60, 60);
+}
+*/

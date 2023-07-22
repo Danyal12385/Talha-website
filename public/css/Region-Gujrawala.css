@@ -1,0 +1,405 @@
+*{
+    margin: 0px;
+    padding: 0px;
+  }
+  .About-Container
+  {
+      width: 80%;
+      height: 490px;
+      margin-left: 120px;
+     
+  }
+  .About-Container-img
+  {
+      background-image: url("images/Abdullah\ Saleem\ President.jpg");
+      height: 490px;
+      width: 100%;
+      opacity: .2;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+  .About-Sub-Container h1
+  {
+      color: black;
+      position: absolute;
+      top: 140px;
+      padding-left: 70px;
+      
+  }
+  .About-Sub-Container p
+  {
+      color: black;
+      position: absolute;
+      top: 190px;
+      padding-left: 70px;
+    
+  }
+  .About-Sub-Con-img
+  {
+      background-image: url("images/Abdullah Saleem President.jpg");
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 5%;
+      height: 426px;
+      width: 500px;
+      position: absolute;
+      top: 26px;
+     right: 186px;
+     opacity: .7;
+  }
+  .About-Sub-Con-img:hover
+  {
+      opacity: .9;
+  }
+  /*core body image*/
+  
+  .div2img img{
+    height: 750px;
+    width: 100%;
+  }
+  /*name of .Sactery,General-Sactery,Voice-pre*/
+  .Voice-pre{
+    margin-top: 75px;
+    margin-left: 180px;
+    color:rgb(90, 90, 255);
+    float: left;
+    /* #dee2e6 */
+  }
+  .Sactery{
+    margin-top: 75px;
+    margin-left: 200px;
+    color:rgb(90, 90, 255);
+    float: left;
+  
+  }
+  .General-Sactery{
+    margin-top: 75px;
+   margin-right:240px ;
+    color:rgb(90, 90, 255);
+    float: right;
+  
+  }
+  
+  
+  .Voice-pre h1 {
+  
+    color:rgb(90, 90, 255);
+  /*  transform: skewX(-15deg);*/
+  /*    text-shadow: 0 3px 5px #030303;*/
+  
+    /*
+              changeColor 4.8s 0.1s ease-in-out infinite;
+              */
+  }
+  .Voice-pre:hover h1{
+    animation: shaking 0.6s 0s 3;
+  }
+  .General-Sactery:hover h1{
+    animation: shaking 0.6s 0s 3;
+  }
+  .Sactery:hover h1{
+    animation: shaking 0.6s 0s 3;
+  }
+  @keyframes shaking {
+    0% {
+        transform: skewX(-15deg);
+    }
+    5% {
+        transform: skewX(15deg);
+    }
+    10% {
+        transform: skewX(-15deg);
+    }
+    15% {
+        transform: skewX(15deg);
+    }
+    20% {
+        transform: skewX(-15deg);
+    }
+    25% {
+        transform: skewX(15deg);
+    }
+    30% {
+        transform: skewX(-15deg);
+    }
+    35% {
+        transform: skewX(15deg);
+    }
+    50% {
+        transform: skewX(0deg);
+    }
+    100% {
+        transform: skewX(0deg);
+    }
+  }
+  /*voice presedent*/
+  .Voice-pre h1::after
+  {
+   content: '';
+   width: 0;
+   height: 3px;
+   background-color: rgb(83, 54, 54);
+   margin: auto;
+   display: block;
+   margin-left: 0px;
+  }
+  .Voice-pre h1:hover::after
+  {
+  width: 7%;
+  transition: width 0.6s linear;
+  
+  }
+  .Voice-pre h1:hover
+  {
+  color: rgb(155, 60, 60);
+  }
+  /*.General-Sactery name*/
+  .General-Sactery h1::after
+  {
+   content: '';
+   width: 0;
+   height: 3px;
+   background-color: rgb(83, 54, 54);
+   margin: auto;
+   display: block;
+   margin-left: 0px;
+  }
+  .General-Sactery h1:hover::after
+  {
+  width: 7%;
+  transition: width 0.6s linear;
+  
+  }
+  .General-Sactery h1:hover
+  {
+  color: rgb(155, 60, 60);
+  }
+  /*Sactery name*/
+  .Sactery h1::after
+  {
+   content: '';
+   width: 0;
+   height: 3px;
+   background-color: rgb(83, 54, 54);
+   margin: auto;
+   display: block;
+   margin-left: 0px;
+  }
+  .Sactery h1:hover::after
+  {
+  width: 7%;
+  transition: width 0.6s linear;
+  
+  }
+  .Sactery h1:hover
+  {
+  color: rgb(155, 60, 60);
+  }
+  
+  /*images and name data*/
+  .flood-4
+  {
+  display: inline-flex;
+  margin-left: 100px;
+  }
+  .flood-5
+  {
+  border: 1px solid rgb(220, 213, 213);
+  width: 300px;
+  height: 310px;
+  margin-left: 45px;
+  margin-top: 10px;
+  border-radius:7%;
+  text-align: center;
+  background-color: rgb(250, 243, 243);
+  
+  }
+  .flood-6 img
+  { 
+   width:300px;
+   height:180px;
+    border-top-right-radius: 7%;
+    border-top-left-radius: 7%;
+  }
+  .flood-7
+  {
+    height: 130px;
+    width: 300px;
+  }
+  .flood-8 button
+  {
+    background-color: rgb(30, 208, 30);
+    border: 1px solid rgb(30, 208, 30);
+    color: white;
+    height: 30px;
+    width: 100px;
+    font-size: 11px;
+    border-radius: 9%;
+    margin-top: 10px;
+   margin-right: 140px;
+  }
+  .flood-9 p
+  {
+    margin-top:10px;
+    margin-left: 40px;
+    margin-right: 15px;
+    font-size: 15px;
+  }
+  /*presedent information css*/
+  .divee{
+    background-image: url("images/poverty8.jpg");
+    width: 100%;
+    height: 450px; 
+    align-content: center;
+  }
+  .presedent-info{
+    width: 370px;
+    background-color: rgb(250, 243, 243);
+      align-items: center;
+        display: flex;
+         flex-direction: column; 
+          margin: auto;
+          height: 330px; 
+          box-shadow: inset -5px -5px rgba(58, 57, 57, 0.5); 
+           border-radius: 25px;
+           margin-left: 750px;
+           margin-top: 50px; 
+           box-shadow: -2px 2px 2px 2px rgba(0,0,0,0.3);
+           float: left;
+  }
+  .presedent-info i{
+    color: blue;
+  }
+  .presedent-info h1{
+     color: blue;
+     margin-top: 25px;
+  }
+  .presedent-info p{
+    color: blue;
+  }
+  .enents-name{
+    height: 200px;
+    width: 100%;
+  }
+  /*prevous events,monthly report,orphange visit*/
+  .main-div{
+    height: 700px ;
+    width: 100%;
+    display: flex;
+  }
+  .p-event{
+    float: left;
+    background-image: url("images/IMG-20230211-WA0002.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 80px;
+    height: 500px;
+    width: 350px;
+   
+  }
+  .monthly-report{
+    background-image: url("images/Mothly Report.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 80px;
+    float: left;
+    height: 500px;
+    width: 350px;
+  
+  }
+  .orphange-visit{
+    /* background-image: url("");
+    background-repeat: no-repeat;
+   background-attachment: fixed;
+    background-size: cover;
+    height: 500px;
+   
+    margin-right: 70px; */
+    margin-left: 80px;
+    width: 350px;
+  }
+  .orphange-visit img{
+    height: 500px;
+    width: 350px;
+  }
+  /*counting css*/
+  .Counting-Con
+  {
+  
+    display: inline-flex;
+    /* margin-left: 45px; */
+    border: 2px solid #0d6db7;
+    background-color: #0d6db7;
+    width: 99%;
+    height: 500px;
+  }
+  
+  .Counting-Con .fa-solid
+  {
+    padding-top: 40px;
+    width: 60px;
+    height:160px;
+    font-size:80px;
+    color:red;
+    
+  }
+  .Counting-Con h1
+  {
+    color: black;
+    font-size: 20px;
+  }
+  .Counting-Con{
+    background-image: url("images/salyni.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .Con-1
+  {
+    /* border: 1px solid rgb(220, 213, 213);*/
+    /* border: 1px solid #0d6db7; */
+    width: 200px;
+   height: 270px;
+   margin: 30px;
+   border-radius:7%;
+   text-align: center;
+   margin-top: 130px;
+  }
+  
+  .Circle-1
+  {
+    background-color: white;
+    width: 120px;
+    height: 120px;
+  
+    border-radius: 60px;
+    margin-left: 40px;
+    margin-right: 50px;
+    margin-top: 40px;
+  }
+  /*
+  .fuck-me {
+    background-color: #b39a9a;
+    border-radius: 60px;
+    height: 120px;
+    margin-bottom: 20px;
+    width: 120px;
+  }
+  */
+  .Circle-1  .fa-solid
+  {
+    width: 60px;
+    height:160px;
+    font-size:50px;
+    /* color:red; */
+    color: rgb(22, 181, 22);
+    padding-top: 26px;
+    align-content: center;
+   
+  }
+  
+    
+  
+  
+  
+  
+  

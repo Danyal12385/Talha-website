@@ -1,0 +1,257 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.Subscribe
+{
+    position: relative;
+}
+.Subscribe img{
+    height: 190px;
+    width: 900px;
+    margin-left: 230px;
+}
+.Subscribe button
+{
+    padding: 15px 40px;
+    color:rgb(90, 90, 255);
+    border-radius: 10%;
+    background-color: white;
+    border-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: absolute;
+    top: 40%;
+    left: 47%;
+}
+.div1{
+    background-color: brown;
+    height: 300px;
+    width: 950px;
+    padding: 30px;
+    margin-top: 45px;
+    margin-left: 150px;
+}
+.message{
+    
+    float: left;
+    height: 300px;
+    width: 500px;
+    
+}
+.message p{
+    margin-top: 40px;
+}
+.prese-pic{
+    background-color: brown;
+    float: right;
+    height: 300px;
+    width: 420px;
+}
+.prese-pic img{
+    height: 300px;
+    width: 420px;
+}
+.div2img{
+    margin-top: 10px;
+    width: 100%;
+    background-color: black;
+}
+.div2img img{
+    width: 500px;
+    height: 400px;
+
+}
+.Lahore
+{
+    margin-top: 10px;
+    margin-left: 130px;
+    color:rgb(90, 90, 255);
+    /* #dee2e6 */
+}
+
+
+.Lahore h1 {
+ 
+    color:rgb(90, 90, 255);
+  /*  transform: skewX(-15deg);*/
+/*    text-shadow: 0 3px 5px #030303;*/
+ 
+    /*
+              changeColor 4.8s 0.1s ease-in-out infinite;
+              */
+}
+.Lahore:hover h1{
+    animation: shaking 0.6s 0s 3;
+}
+
+@keyframes shaking {
+    0% {
+        transform: skewX(-15deg);
+    }
+    5% {
+        transform: skewX(15deg);
+    }
+    10% {
+        transform: skewX(-15deg);
+    }
+    15% {
+        transform: skewX(15deg);
+    }
+    20% {
+        transform: skewX(-15deg);
+    }
+    25% {
+        transform: skewX(15deg);
+    }
+    30% {
+        transform: skewX(-15deg);
+    }
+    35% {
+        transform: skewX(15deg);
+    }
+    50% {
+        transform: skewX(0deg);
+    }
+    100% {
+        transform: skewX(0deg);
+    }
+}
+.Lahore h1::after
+{
+   content: '';
+   width: 0;
+   height: 3px;
+   background-color: rgb(83, 54, 54);
+   margin: auto;
+   display: block;
+   margin-left: 0px;
+}
+.Lahore h1:hover::after
+{
+  width: 7%;
+  transition: width 0.6s linear;
+  
+}
+.Lahore h1:hover
+{
+  color: rgb(155, 60, 60);
+}
+.flood-4
+{
+  display: inline-flex;
+  margin-left: 100px;
+}
+.flood-5
+{
+  border: 1px solid rgb(220, 213, 213);
+  width: 300px;
+ height: 310px;
+ margin-left: 45px;
+ margin-top: 10px;
+ border-radius:7%;
+ text-align: center;
+ background-color: rgb(250, 243, 243);
+ 
+}
+.flood-6 img
+{ 
+   width:300px;
+   height:180px;
+    border-top-right-radius: 7%;
+    border-top-left-radius: 7%;
+}
+.flood-7
+{
+    height: 130px;
+    width: 300px;
+}
+.flood-8 button
+{
+    background-color: rgb(30, 208, 30);
+    border: 1px solid rgb(30, 208, 30);
+    color: white;
+    height: 30px;
+    width: 100px;
+    font-size: 11px;
+    border-radius: 9%;
+    margin-top: 10px;
+   margin-right: 140px;
+}
+.flood-9 p
+{
+    margin-top:10px;
+    margin-left: 40px;
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+/*counting css*/
+.Counting-Con
+{
+  display: inline-flex;
+  margin-left: 80px;
+  border: 2px solid #0d6db7;
+  background-color: #0d6db7;
+  width: 90%;
+  height: 500px;
+}
+
+.Counting-Con .fa-solid
+{
+  padding-right: 100px;
+  padding-top: 40px;
+  width: 60px;
+  height:160px;
+  font-size:80px;
+  color:red;
+  
+}
+.Counting-Con h1
+{
+  color: black;
+  font-size: 20px;
+}
+.Counting-Con{
+  background-image: url(Final-Project/image/salyni.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.Con-1
+{
+  width: 200px;
+ height: 270px;
+ margin: 30px;
+ border-radius:7%;
+ text-align: center;
+ margin-top: 130px;
+}
+
+.Circle-1
+{
+  background-color: white;
+  width: 120px;
+  height: 120px;
+
+  border-radius: 60px;
+  margin-left: 40px;
+  margin-right: 50px;
+  margin-top: 40px;
+}
+.Circle-1  .fa-solid
+{
+  width: 60px;
+  height:160px;
+  font-size:50px;
+  /* color:red; */
+  color: rgb(22, 181, 22);
+  padding-top: 26px;
+  padding-left: 30px;
+}
+
+  
+
+
+
+
+
+/*counting css end*/

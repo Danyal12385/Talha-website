@@ -1,0 +1,28 @@
+body{
+    background: url("image/induction\ background\ images.jpg") ;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.reganchor,.loginanchor{
+
+    border:2px solid aqua;
+    position: relative;
+    color:aqua;
+    text-transform:uppercase;
+    border-radius: 100px;
+    transition: 0.7s;
+    letter-spacing:2px;
+    background-color:black;
+    cursor: pointer;
+}
+.reganchor{
+        padding:2% 3rem;
+        font-size: 1.5rem;
+        margin-right: 10px;
+    }
+.reganchor:hover,.loginanchor:hover{
+      box-shadow:0 3px 33px 0 aqua inset,0 3px 35px 0 aqua;
+      color: white;
+      font-weight: bolder;
+    }   
+

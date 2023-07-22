@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<head>
+    <title>Sign up Form</title>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/public/css/sign up.css">
+    <link rel="stylesheet" href="/public/css/Footer-style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+</head>
+<style>
+    .Form-1 input {
+        position: relative !important;
+    }
+</style>
+<body style="background-image: url(public/images/sign\ upppp.jpg);">
+<div class="Top-page">
+    <h1>Sign up Form</h1>
+    <h6 class="text-success" id="success-text"></h6>
+    <h6 class="text-danger" id="error-text"></h6>
+</div>
+<div class="Form-1">
+<form  id="signup-form">
+    <label><h1>Name</h1></label>
+    <input type="text" class="Name" name="name" placeholder="Enter your name" id="name-1" style="position:absolute;top:-25px">
+    <br>
+    <span id="username" style="color: yellow;margin-left:360px;position:absolute;margin-top: -21px;"></span>
+    <br>
+    <label><h1> Password</h1></label>
+    <input type="password" class="password" name="password" placeholder="Please enter Password"  id="password-1"  style="position:absolute;top:-25px">
+    <br>
+    <span id="passwordname" style="color: yellow;margin-left:360px;position:absolute;margin-top: -21px;"></span>
+    <br>
+    <label><h1>Confirm Password</h1></label>
+    <input type="password" class="confrmpassword" placeholder="Confirm Password"  id="confirmpassword"  style="position:absolute;top:-25px">
+    <br>
+    <span id="confirmpasswordname" style="color: yellow;margin-left:360px;position:absolute;margin-top: -21px;"></span>
+    <br>
+    <!----
+    <label><h1>Phone Number</h1></label>
+    <input type="tel" class="phone" placeholder="Enter phone number" id="Phone">
+    <br>
+    <span id="phonename" style="color:  yellow;margin-left:360px;margin-top:-60px;"></span>
+    <br>
+    ---->
+   
+    <label><h1>Email</h1></label>
+    <input type="email" class="email" name="email" placeholder="Enter Email" id="emailnm" style="position:absolute;top:-25px" >
+    <input type="hidden" name="role" value="user">
+    <br>
+    <span id="emailname" style="color:  yellow;margin-left:360px;position:absolute;margin-top: -21px;" ></span>
+    <br>
+ 
+ <input type="submit" id="submit-btn" class="sub" >
+</form>
+</div>
+<!------------------------------------ Footer   ---------------------------------->
+<section id="footer-container">
+</section>
+ 
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+<script src="/public/js/include.js"></script>
+<script src="/public/js/auth.js"></script>
+
+    <!-----------------------------------  JavaScript Validations Foam -------------------------------------------->
+<script>
+
+document.getElementById("signup-form").addEventListener("submit", (event) => {
+    event.preventDefault();
+
+    user =  document.getElementById("name-1").value;
+    
+    pass = document.getElementById("password-1").value;
+    confirmpass = document.getElementById("confirmpassword").value;
+   /* phone = document.getElementById("Phone").value;*/
+    
+    email = document.getElementById("emailnm").value;
+
+/*----------------------------------User Conditions statements --------------------------- - */
+   
+if(user == ""){
+       document.getElementById("username").innerHTML = "** Please fill the username field **";
+       return false;
+    }
+
+    document.getElementById("username").innerHTML = "";
+   
+    if(!isNaN(user)){
+        document.getElementById("username").innerHTML = "** Only Characters are allowed **";
+       return false;
+    }
+
+    document.getElementById("username").innerHTML = "";
+
+    if((user.length <= 2)  && (user.length > 15)){
+        document.getElementById("username").innerHTML = "** user length must between 2 and 10 **";
+       return false;
+    } 
+
+    document.getElementById("username").innerHTML = "";
+
+
+/* ---------------------------------- Password Conditions statements ----------------------------- */
+
+if(pass == ""){
+    document.getElementById("passwordname").innerHTML = "** Please enter the password **";
+    return false;
+}
+
+document.getElementById("passwordname").innerHTML = "";
+
+/* ---------------------------------- Confirm password Conditions statements ----------------------------- */
+if(confirmpass == ""){
+    document.getElementById("confirmpasswordname").innerHTML ="** Please fill the confirm password field";
+    return false;
+}
+
+document.getElementById("confirmpasswordname").innerHTML ="";
+
+if(pass != confirmpass){
+    document.getElementById("confirmpasswordname").innerHTML = "** Password are not matching **";
+    return false;
+}
+
+document.getElementById("confirmpasswordname").innerHTML = "";
+/* ------------------------------------ Phone number Conditions statements ---------------------------  
+
+if(phone == ""){
+    document.getElementById("phonename").innerHTML = "** Please fill the  phone number field **";
+    return false;
+}
+if(isNaN(phone)){
+    document.getElementById("phonename").innerHTML = "** Characters are not allowed";
+    return false;
+}
+if((phone.length!=11)){
+    document.getElementById("phonename").innerHTML = "** Mobile number  must  be 11 digits only ";
+    return false;
+}
+
+/* ------------------------------------ Email Conditions statements --------------------------- */
+
+if(email == ""){
+    document.getElementById("emailname").innerHTML = "** Please fill the Email field **";
+    return false;
+}
+
+document.getElementById("emailname").innerHTML = "";
+
+if(email.indexOf('@') <= 0 ){
+    document.getElementById("emailname").innerHTML = "** @ Invalid Position";
+    return false;
+}
+
+document.getElementById("emailname").innerHTML = "";
+/*
+if(email.charAt(email.length-4)!='.') && (email.charAt(email.length-3)!='.'){
+    document.getElementById("emailname").innerHTML = "** Invalid Position";
+    return false;
+}
+
+*/
+
+let formData = new FormData(event.target);
+
+signup(formData);
+})
+
+</script>
+</body>
+</html>

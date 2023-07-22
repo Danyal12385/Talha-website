@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Islamabad.css">
+    <title>Islamabad</title>
+</head>
+<body>
+    <div class="Subscribe"><img src="../image/poverty4.jpg">
+        <button><h1>Islamabad</h1></button>
+        </div>
+    <div class="div1">
+        <div class="message"><br><br>
+            <h1>Introduction</h1>
+
+            <p>
+                KAAR-E-KAMAL  Is a Non-Profitable Organization.It was started almost  4 years
+                <br>
+                ago and now it is working in 14+ cities of Pakistan and still growing day by day.
+                <br>
+                Every city has its own donations records and individual events like Orphanage vi
+                <br>
+                sits.food drives, Flood Campaigns, Medical camps etc. 
+            </p>
+        </div>
+        <div class="prese-pic">
+            <img src="../image/Faisalabad.jpg" alt="presedent image">
+        </div>
+
+    </div>
+  
+    <div class="Lahore"><h1>Lahore</h1></div>
+    
+    <div class="flood-4">
+    
+     <div class="flood-5">        
+    <div class="flood-6"><img src="../image/images.jpg"></div>
+    <div class="flood-7">
+    <div class="flood-8"><button>Fri jan 27 2023</button></div>
+        <div class="flood-9"><p>KARA KAMAL Welfare Organization visit Lok versa</p></div>
+    </div>
+    
+    </div>
+    
+    
+    <div class="flood-5">        
+        <div class="flood-6"><img src="../image/images.jpg"></div>
+        <div class="flood-7">
+        <div class="flood-8"><button>Fri jan 27 2023</button></div>
+            <div class="flood-9"><p>KARA KAMAL Welfare Organization visit Lok versa</p></div>
+        </div>
+        
+        </div>
+    
+    
+        <div class="flood-5">        
+            <div class="flood-6"><img src="../image/images.jpg"></div>
+            <div class="flood-7">
+            <div class="flood-8"><button>Fri jan 27 2023</button></div>
+                <div class="flood-9"><p>KARA KAMAL Welfare Organization visit Lok versa</p></div>
+            </div>
+            
+            </div>
+    
+    </div>
+    <div class="div2img">
+        <img src="../image/lahore induction.jpg" alt="core body imag">
+    </div>
+
+
+    <br>
+<!----------------------------------- Counting html  ---------------------------------->
+
+<div class="Counting-Con" >
+
+  <div class="Con-1">
+  <div class="Circle-1">
+  <i class="fa-solid fa-house-flood-water"></i>
+     <span class="num" data-val="2000" style="text-align: center;color: white;font-size: 30px;">000</span>
+     <br>
+     <span style="color: white;">Family Rastion</span>
+      <br>
+      <span style="color: white;">(Monthly)</span>
+    </div>
+  </div>
+
+  <div class="Con-1">
+    <div class="Circle-1">
+    <i class="fa-solid fa-house-flood-water"></i>
+       <span class="num" data-val="2000" style="text-align: center;color: white;font-size: 30px;">000</span>
+       <br>
+       <span style="color: white;">Orphanage visit</span>
+        <br>
+        <span style="color: white;">(2-3 Months)</span>
+      </div>
+    </div>
+
+    <div class="Con-1">
+      <div class="Circle-1">
+      <i class="fa-solid fa-house-flood-water"></i>
+         <span class="num" data-val="2000" style="text-align: center;color: white;font-size: 30px;">000</span>
+         <br>
+         <span style="color: white;">Orphanage visit</span>
+          <br>
+          <span style="color: white;">(Monthly)</span>
+        </div>
+      </div>
+
+      <div class="Con-1">
+        <div class="Circle-1">
+        <i class="fa-solid fa-house-flood-water"></i>
+           <span class="num" data-val="2000" style="text-align: center;color: white;font-size: 30px;">000</span>
+           <br>
+           <span style="color: white;">Medical</span>
+            <br>
+            <span style="color: white;">(Monthly)</span>
+          </div>
+        </div>
+
+  
+        <div class="Con-1">
+          <div class="Circle-1">
+          <i class="fa-solid fa-house-flood-water"></i>
+             <span class="num" data-val="2000" style="text-align: center;color: white;font-size: 30px;">000</span>
+             <br>
+             <span style="color: white;">Food Drive</span>
+              <br>
+              <span style="color: white;">(Monthly)</span>
+            </div>
+          </div>
+  </div>
+
+<!------------------------------------ Counting java Script  ---------------------------------->
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+
+}
+</script>
+
+<script>
+var typed = new Typed (".Auto-Type", {
+    strings : ["Cooked food","Ration Bags","Clothes","Blanket","Mosquito kit","Shelter kit"],
+    typeSpeed : 110,
+    backSpeed : 110,
+    loop :true
+
+  })
+</script>
+
+<script>
+  let valueDisplays = document.querySelectorAll(".num");
+  let interval = 4000;
+  valueDisplays.forEach((valueDisplay) => {
+    let startValue = 0;
+    let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+    let duration = Math.floor(interval / endValue);
+    let counter = setInterval(function () {
+      startValue += 1;
+      valueDisplay.textContent = startValue;
+      if (startValue == endValue) {
+        clearInterval(counter);
+      }
+    }, duration);
+  });
+  </script>
+
+</body>
+</html>

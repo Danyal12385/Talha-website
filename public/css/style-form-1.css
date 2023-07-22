@@ -1,0 +1,123 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+body
+{
+    background-image: url("images/family-Rashan.jpg");
+    background-position: center;
+    background-size: cover;
+
+}
+body
+{
+    margin-top: 60px;
+}
+.Top-page
+{
+  width: 800px;
+  background-color: rgb(0,0,0,0.6);
+  margin: auto;
+  color: #ffffff;
+  padding: 10px 0px 10px 0px;
+  text-align: center;
+  border-radius: 15px 15px 0px 0px;
+}
+.Form-1
+{
+
+    background-color:rgb(0,0,0,0.5);
+    width: 800px;
+    height: 650px;
+    margin: auto;
+      
+    border-color:1px solid gray;
+    color: white;
+}
+.Form-1 h2
+{
+    font-size: 18px;
+}
+.Form-1
+{
+    padding-top: 20px;
+   
+}
+.Form-1 h2
+{
+    margin-top: 15px;
+    margin-left: 35px;
+}
+.City,.Medicine,.Total-Income
+{
+    margin-left: 35px;
+}
+.Form-1 textarea
+{
+    margin-left: 360px;
+   margin-top: -50px;
+}
+
+.Documents,.CNIC-1,.Utility-Bill,.Bey-form
+{
+    margin-left: 35px;
+}
+.Form-1 label
+{
+    margin-left: 60px;
+}
+.Name,.Head,.Father-Husband,.CNIC,.phone,.Family   input
+{
+    background-color: white;
+    width:300px;
+    height: 30px;
+  border-radius: 6px;   
+}
+.Form-1 input
+{
+    position: absolute;
+}
+.Name,.Head,.Father-Husband,.CNIC,.phone,.Family input 
+{
+    margin-left: 360px;
+}
+.Name,.Head,.Father-Husband,.CNIC,.phone,.Family input 
+{
+    margin-top: -45px;
+    
+}
+.sub
+{
+    margin-left: 50px;
+    margin-top: 32px;
+    border: 1px solid  rgb(39, 185, 185);
+    border-radius: 7px;
+   /* background-color: rgb(39, 185, 185);*/
+   background-color:black;
+   cursor: pointer;
+   color:aqua;
+   /* color: white;*/
+    font-size: 20px;
+    width: 190px;
+    height: 35px;
+}
+.sub:hover
+{
+box-shadow:0 3px 33px 0 aqua inset,0 3px 35px 0 aqua;
+color: white;
+font-weight: bolder;
+}
+.Documents,.CNIC-1,.Utility-Bill,.Bey-form
+{
+    margin-left: 35px;
+    margin-top: 3px;
+}
+@media only screen and (max-width: 770px){
+	.container{
+		flex-direction: column;
+	}
+	body{
+		overflow-x: hidden;
+	}
+}

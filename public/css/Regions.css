@@ -1,0 +1,5 @@
+body{
+    background: url("/public/images/donat.jpg") ;
+    background-size: cover;
+    background-attachment: fixed;
+}

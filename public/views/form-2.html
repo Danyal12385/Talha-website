@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Form-2</title>
+    <link rel="icon" type="image/x-icon" href="images/kara-kamal-logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Style.css">
+    <link rel="stylesheet" href="Footer-style.css">
+    <link rel="stylesheet" href="style-form-1.css">
+  
+   
+</head>
+<body>
+<div class="Top-page">
+    <h1>Family Verification Form(con)</h1>
+</div>
+<div class="Form-1">
+<form onsubmit="return validation()">
+    <!-------------
+    <label><h2>Name</h2></label>
+    <input type="text" class="Name" id="name">
+    <span id="username" style="margin-left: 360px;color: rgb(0, 255, 47);"></span>
+    <br>
+   <label> <h2>Head of family Name</h2></label>
+    <input type="text" placeholder="Name of head of family" class="Head" id="Headfamily">
+    <span id="Headname" style="margin-left: 360px;color: rgb(0, 255, 47);"></span>
+    <br>
+    <label><h2>Father/Husband Name</h2></label>
+    <input type="text" placeholder="Enter your Father/Husband Name" class="Father-Husband" id="Father">
+    <span id="Fathername" style="margin-left: 360px;color: rgb(0, 255, 47);"></span>
+    <br>
+    <label><h2>CNIC Detail</h2></label>
+    <input type="tel" placeholder="Enter your CNIC" class="CNIC" id="CNIC-Detail">
+    <span id="CNICname" style="margin-left: 360px;color: rgb(0, 255, 47);"></span>
+    <br>
+-------------------->
+    
+    <label><h2>Phone Number</h2></label>
+    <input type="tel" class="phone" id="Phone">
+    <span id="Phonename" style="margin-left: 360px;color: rgb(0, 255, 47);"></span><br>
+    
+    <!----
+    <label><h2>Family Details</h2></label>
+    <textarea cols="40" rows="6" class="Family"></textarea><br>
+    ------->
+    
+    <h2 style="margin-top: 30px;">Family detais</h2>
+    <textarea cols="40"  rows="5" id="PresentAddress"></textarea>
+    <span id="Presentname" style="margin-left: 360px;color: rgb(0, 255, 47);"></span>
+    <br> 
+    
+    <!----
+    <h2>Details of children</h2>
+    <textarea cols="40"  rows="5"></textarea><br> 
+    ------>
+    
+    <h2  style="margin-top: 50px;">Details of House(Rent)</h2>
+    <textarea cols="40"  rows="5" id="DetailHouse"></textarea>
+    <span id="Detailsname" style="margin-left: 360px;color: rgb(0, 255, 47);"></span>
+    <br> 
+<!-----------------------------------------------------------------------
+    <label><h2>City Name</h2></label>
+    <select class="City">
+          
+        <option value="L"> Lahore      </option>
+        <option value="I"> Islamabad   </option>
+        <option value="B"> BahawalPur  </option>
+        <option value="C"> Chichawatni </option>
+        <option value="F"> Faisalabad  </option>
+        <option value="G"> Gujranwala  </option>
+        <option value="H"> Haroonabad  </option>
+        <option value="M"> Muridkey    </option>
+        <option value="M"> Multan      </option>
+        <option value="O"> Okara       </option>
+        <option value="R"> Rahim Yar Khan</option>
+        <option value="BN"> Bahawalanagar</option>
+    
+      </select><br>
+
+    <h2>Total Income Details</h2>
+    <select class="Total-Income">
+          
+        <option value="1">  1000  </option>
+        <option value="2">  2000  </option>
+        <option value="3">  3000  </option>
+        <option value="4">  4000  </option>
+        <option value="5">  5000  </option>
+        <option value="6">  6000  </option>
+        <option value="7">  7000  </option>
+        <option value="8">  8000  </option>
+        <option value="9">  9000  </option>
+        <option value="10"> 10,000  </option>
+        <option value="11"> 11,000  </option>
+        <option value="12"> 12,000  </option>
+
+      </select><br>
+      ----->
+<!-----
+      <h2>Source Of income</h2>
+      <textarea cols="30"  rows="10"></textarea><br>
+    ------->  
+    
+    <h2> Medicine and School fee Case</h2>
+    <select class="Medicine">
+
+        <option value="Medicine">Medicine</option>
+       <option  value="School">School</option>
+    </select><br>
+
+<h2  class="h2-doc">Documents</h2>
+<br>
+
+<input type="radio"  value="CNIC" class="Documents" >
+ <label for="CNIC" class="CN">CNIC</label><br>
+ <input type="radio"  name="fav_language" value="Utility Bills" class="CNIC-1" >
+ <label for="Utility Bills" class="UT">Utility Bills</label><br>
+ <input type="radio" value="Bey form" class="Utility-Bill"  >
+ <label for="Bey form" class="BF">Bey form</label><br>
+ <input type="radio" value="Death Certificate" class="Bey-form" >
+ <label for="Bey form" class="BF-1">Death Certifiacte of Husband</label><br>
+ <br>
+ <label for="myfile">Select files:</label>
+ <input type="file" class="myfile-1" name="myfile" multiple ><br>
+
+ <input type="submit"  class="sub" >
+</form>
+</div>
+
+
+
+<!------------------------------------ Footer   ---------------------------------->
+<section>
+    <div class="Footer">
+    <div class="Footer-left">
+    <img src="images/kara-kamal-logo.jpg"  style="width: 100px;height:100px;position: absolute;left:40px;top: 43px; ">
+    <br>
+    <p style="font-size: 12px;margin-top: 40px;">Donate for After_life</p>
+    <p>
+        KAAR-E-KAMAL  Is a Non-Profitable Organization. 
+        It was started almost 4 years ago and now it is working in 14+ cities of Pakistan 
+        and still growing day by day. Every city has its own donations records and 
+        individual events like Orphanage visits, food drives, Flood Campaigns, Medical camps etc. 
+        Each City has their individual families which must be fed every month.
+    </p>
+    </div>
+    <div class="Footer-middle">
+       <h1>Contact</h1>
+       <br>
+       <p>Address: Head Quater of Kara kamal Welfare Foundation Lahore-Pakistan</p>
+       <br>
+       <p>UAN:111-983-222-323-21</p>
+       <br>
+       <p>Cell: 03043211214</p>
+       <br> 
+       <a href="#" class="fa fa-facebook"></a>
+       <a href="#" class="fa fa-instagram"></a>
+       <a href="#" class="fa fa-linkedin"></a>
+       <a href="#" class="fa fa-twitter"></a>
+       <div class="Button-footer"><a href="Donate.html " target="_blank"><button>Donate</button></a></div>
+    </div>
+    <div class="Footer-right">
+        <h1>Regions</h1>
+        <br>
+      <a href="Bahawalpur.html" > <p>Bahawalpur</p></a>
+        <p>Lahore</p>
+        <p>Islamabad</p>
+        <p>Gujranwala</p>
+        <p>Rahim Yar Khan</p>
+        <p>Faisalabad</p>
+        <p>Bahawalnagar</p>
+        
+        <p>Haroonabad</p>
+        <p>Multan</p>
+        <p>Muridkey</p>
+        <p>Okara</p>
+    </div> 
+    </div>
+    </section>
+    
+    <div class="Footer-bottom">
+    <hr>
+    <p>Copyright &copy; 2022 by Kara Kamal Welfare Organization</p>
+    </div>
+
+
+<script>
+
+function validation(){
+ 
+    var tel = document.getElementById("Phone").value;
+    var address = document.getElementById("PresentAddress").value;
+    var house = document.getElementById("DetailHouse").value;
+
+
+/*----------------------------------User Conditions statements --------------------------- - 
+
+    if(user == ""){
+       document.getElementById("username").innerHTML = "** Please fill the username field **";
+       return false;
+    }
+   
+    if(!isNaN(user)){
+        document.getElementById("username").innerHTML = "** Only Characters are allowed **";
+       return false;
+    }
+    if((user.length <= 2)  || (user.length > 10)){
+        document.getElementById("username").innerHTML = "** user length must between 2 and 10 **";
+       return false;
+    } 
+   
+/*----------------------------------Head of Family Conditions statements--------------------------- - 
+
+   
+    if(head == ""){
+       document.getElementById("Headname").innerHTML = "** Please fill the Head name field **";
+       return false;
+    }
+    if((head.length <= 6)  || (head.length > 20)){
+        document.getElementById("Headname").innerHTML = "** user length must between 6 and 20 **";
+       return false;
+    } 
+    if(!isNaN(head)){
+        document.getElementById("Headname").innerHTML = "** Only Characters are allowed **";
+       return false;
+    }
+
+/*----------------------------------Father/Husband Conditions statements--------------------------- - 
+
+
+    if(father == ""){
+       document.getElementById("Fathername").innerHTML = "** Please fill the father/Husband name **";
+       return false;
+    }
+    if((father.length <= 6)  || (father.length > 20)){
+        document.getElementById("Fathername").innerHTML = "** user length must between 6 and 20 **";
+       return false;
+    } 
+    if(!isNaN(father)){
+        document.getElementById("Fathername").innerHTML = "** Only Characters are allowed **";
+       return false;
+    }
+
+/*---------------------------------- CNIC Conditions statements--------------------------- - 
+
+
+if(cnic == ""){
+       document.getElementById("CNICname").innerHTML = "** Please Enter the CNIC number **";
+       return false;
+    }
+    if((cnic.length <= 13)  || (cnic.length > 14)){
+        document.getElementById("CNICname").innerHTML = "** user length must between 13 and 14 **";
+       return false;
+    } 
+    if(isNaN(cnic)){
+        document.getElementById("CNICname").innerHTML = "** Only numbers are allowed **";
+       return false;
+    }
+
+/*---------------------------------- Phone Conditions statements--------------------------- - */
+
+
+if(tel == ""){
+       document.getElementById("Phonename").innerHTML = "** Please Enter the Phone number **";
+       return false;
+    }
+    if((tel.length!=11)){
+        document.getElementById("Phonename").innerHTML = "** Mobile Number must be 11 digits **";
+       return false;
+    } 
+    if(isNaN(tel)){
+        document.getElementById("Phonename").innerHTML = "** Only numbers/digits are allowed **";
+       return false;
+    }
+
+
+/*---------------------------------- Address Conditions statements--------------------------- - */
+
+
+    if(address == ""){
+       document.getElementById("Presentname").innerHTML = "** Please fill the address **";
+       return false;
+    }
+    if((address.length <= 2)  || (address.length > 15)){
+        document.getElementById("Presentname").innerHTML = "** user length must between 12 and 15 **";
+       return false;
+    } 
+
+/*---------------------------------- House Conditions statements--------------------------- - */
+
+    if(house == ""){
+       document.getElementById("Detailname").innerHTML = "** Please fill the house rent  **";
+       return false;
+    }
+    if((house.length <= 2)  || (house.length > 15)){
+        document.getElementById("Detailname").innerHTML = "** user length must between 12 and 15 **";
+       return false;
+    } 
+}
+
+</script>
+
+
+</body>
+</html>

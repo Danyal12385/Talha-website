@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Induction Form</title>
+    <link rel="icon" type="image/x-icon" href="images/kara-kamal-logo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/public/css/Style.css">
+    <link rel="stylesheet" href="/public/css/Footer-style.css">
+    <link rel="stylesheet" href="/public/css/style-form.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</head>
+<style>
+    h1, h5 {
+        color: #fff;
+    }
+
+</style>
+<body>
+
+<!-----------------------------Header / Nav bar coding ------------------------->
+
+<div class="Nav-bar">
+
+    <img src="public/images/kara-kamal-logo.jpg" alt=" imag"
+      style="height: 80px;/* border-radius: 50%;*/position: absolute;left: 10px;">
+
+    <ul>
+      <li><a href="/">Home </a></li>
+    
+      <li><a href="/family-registration">Form </a></li>
+      <li><a href="/events">Events</a></li>
+      <li><a href="/regions">Regions</a></li>
+      <li><a href="/induction">Induction</a></li>
+      <li><a href="/about">About <i class="fas fa-caret-down"></i></a>
+
+      </li>
+      <li><a href="/donate"><button   style="position: absolute;right:90px;top:48px;" class="Signup-button">Donate</button></a></li>
+
+    </ul>
+    <!-----
+ <li><a href="login.html" >Login</a></li>
+ <li><a href="sign up.html" >Sign up</a></li>
+ ------->
+  </div>
+
+
+<div class="main-container container my-5 px-0 pt-0" style="height: 100%; padding-bottom: 30px; padding-top: 10px; background-color: rgb(0 0 0 / 53%); border-radius: 12px; width: 612px;">
+        <h1 class="title text-center py-3" style="background-color: #0000003d; border-radius: 12px 12px 0px 0px;">Induction Form</h1>
+    <div class="Main-form d-flex justify-content-center">
+        <form id="induction-form" class="row px-5 mx-5" method="post" enctype="multipart/form-data" style="max-width: 1100px;">
+    
+            <div class="col-md-12 mt-2">
+                <h5 class="mb-3 text-center text-success" id="success-text"></h5>
+                <h5 class="mb-3 text-center text-danger" id="error-text"></h5>
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label mb-0">
+                        <h5>Name</h5>
+                    </label>
+                    <input type="text" class="form-control shadow-none" name="name" id="name"
+                        placeholder="Enter your Name" aria-describedby="emailHelp">
+                    <span id="username" style="color: rgb(0, 255, 47);"></span>
+                </div>
+            </div>
+            <div class="col-md-12 mt-2">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label mb-0">
+                        <h5>CNIC Detail</h5>
+                    </label>
+                    <input type="number" class="form-control shadow-none" name="cnic" id="CNICDetail"
+                        placeholder="Enter your CNIC No." aria-describedby="emailHelp">
+                    <span id="CNICname" style="color: rgb(0, 255, 47);"></span>
+                </div>
+            </div>
+            <div class="col-md-12 mt-2">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label mb-0">
+                        <h5>Phone Number</h5>
+                    </label>
+                    <input type="number" class="form-control shadow-none" name="phone" id="Phone"
+                        placeholder="Enter your Phone Number" aria-describedby="emailHelp">
+                    <span id="Phonename" style="color: rgb(0, 255, 47);"></span>
+                </div>
+            </div>
+            <div class="col-md-12 mt-2">
+                <div class="mb-3">
+                    <h5>Present Address</h5>
+                    <textarea class="form-control" name="address" id="PresentAddress" rows="3"></textarea>
+                    <span id="Presentname" style="color: rgb(0, 255, 47);"></span>
+                </div>
+            </div>
+            <div class="d-flex justify-content-center">
+                <input type="submit" class="sub m-0 px-3 pb-3 submit-btn" style="width: fit-content;" id="family-form-submit-btn">
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+<!------------------------------------ Footer   ---------------------------------->
+<section id="footer-container">
+</section>
+
+<!---------------- JavaScripts  ----------------------->
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="/public/js/inductionForm.js"></script>
+<script src="/public/js/include.js"></script>
+
+<script>
+
+function validation(){
+    var user = document.getElementById("name").value;
+ 
+  
+    
+    var cnic = document.getElementById("CNIC-Detail").value;
+
+    var tel = document.getElementById("Phone").value;
+    var address = document.getElementById("PresentAddress").value;
+    var totalincome = document.getElementById("City").value;
+
+
+/*----------------------------------User Conditions statements --------------------------- - */
+
+    if(user == ""){
+       document.getElementById("username").innerHTML = "** Please fill the username field **";
+       return false;
+    }
+   
+    if(!isNaN(user)){
+        document.getElementById("username").innerHTML = "** Only Characters are allowed **";
+       return false;
+    }
+    if((user.length <= 2)  || (user.length > 15)){
+        document.getElementById("username").innerHTML = "** user length must between 2 and 10 **";
+       return false;
+    } 
+   
+
+
+/*---------------------------------- CNIC Conditions statements--------------------------- - */
+
+
+if(cnic == ""){
+       document.getElementById("CNICname").innerHTML = "** Please Enter the CNIC number **";
+       return false;
+    }
+    if((cnic.length <= 2)  || (cnic.length > 16)){
+        document.getElementById("CNICname").innerHTML = "** user length must between 13 and 14 **";
+       return false;
+    } 
+    if(isNaN(cnic)){
+        document.getElementById("CNICname").innerHTML = "** Only numbers are allowed **";
+       return false;
+    }
+/* ------------------------------------ Email Conditions statements ---------------------------  
+
+if(email == ""){
+    document.getElementById("emailname").innerHTML = "** Please fill the Email field **";
+    return false;
+}
+if(email.indexOf('@') <= 0 ){
+    document.getElementById("emailname").innerHTML = "** @ Invalid Position";
+    return false;
+}
+if(email.charAt(email.length-4)!='.') && (email.charAt(email.length-3)!='.'){
+    document.getElementById("emailname").innerHTML = "** Invalid Position";
+    return false;
+}
+*/
+/*---------------------------------- Phone Conditions statements--------------------------- - */
+
+
+if(tel == ""){
+       document.getElementById("Phonename").innerHTML = "** Please Enter the Phone number **";
+       return false;
+    }
+    if((tel.length!=11)){
+        document.getElementById("Phonename").innerHTML = "** Mobile Number must be 11 digits **";
+       return false;
+    } 
+    if(isNaN(tel)){
+        document.getElementById("Phonename").innerHTML = "** Only numbers/digits are allowed **";
+       return false;
+    }
+
+
+/*---------------------------------- Address Conditions statements--------------------------- - */
+
+
+    if(address == ""){
+       document.getElementById("Presentname").innerHTML = "** Please fill the address **";
+       return false;
+    }
+    if((address.length <= 2)  || (address.length > 15)){
+        document.getElementById("Presentname").innerHTML = "** user length must between 12 and 15 **";
+       return false;
+    } 
+/*---------------------------------- Income Conditions statements--------------------------- - */
+if(totalincome == ""){
+    document.getElementById("IncomeName").innerHTML = "** Please fill the choice";
+    return false;
+   }
+/*---------------------------------- windows --------------------------- - 
+    
+    window.location.href = "form-2.html";
+        return true;
+   **/     
+}
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Regions-Kara Kamal</title>
+  <link rel="icon" type="image/x-icon" href="public/images/kara-kamal-logo.jpg">
+  <link rel="stylesheet" href="/public/css/Region-KaraKamal.css">
+  <link rel="stylesheet" href="/public/css/Footer-style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+  <linK rel="stylesheet" href="https://fontawesome.com" />
+  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--Animate on Scoll---------->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+
+</head>
+
+<style>
+  .report-image {
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+
+  .report-image:hover {
+    transform: scale(1.1);
+  }
+</style>
+
+<body onload="fetchRegion()">
+  <!---------------------------------main idv with message and image  ---------------------------------->
+
+  <div id="region-about" class="pt-5">
+    <div class="row" style="margin: 0px 115px;box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; padding: 45px 29px; border-radius: 24px;">
+      <div class="col-6 d-flex flex-column justify-content-center">
+        <h1 data-aos="fade-down">"Message"</h1>
+
+        <p data-aos="fade-right" id="region-message">
+        </p>
+      </div>
+      <div class="col-6 d-flex justify-content-center align-items-center">
+        <img class="rounded-5" id="admin-image" src="" alt=""
+        style="width: 350px; height: 37vh; margin-left: 30px; margin-right: 30px; object-fit: cover;">
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+  <!----------------------------------- Picture of core body  ---------------------------------->
+  <div class="region-main" style="margin: 0px 115px; padding: 25px 13px;">
+    <div class="div2img">
+      <h1 style="margin-left: 10px;text-decoration: underline;">Team Members</h1>
+      <br>
+      <br>
+      <img src="" id="team-image" alt=""
+        style="width: 90%;margin-left: 30px;margin-right: 30px;">
+    </div>
+    <br>
+  </div>
+
+
+  <!----------------------------------- div for presedent info  ---------------------------------->
+  <div class="divee" style="background-image: url(public/images/poverty8.jpg);">
+    <div class="presedent-info" data-aos="fade-up-left">
+
+      <h1>Contact Us</h1><br><br>
+
+      <p> <i class="fa-solid fa-phone"></i> <span id="phone"></span></p>
+      <br>
+
+      <p> <i class="fa-solid fa-envelope"></i> <span id="email"></span></p><br><br>
+      <p><span id="account-type"></span> <span id="account"></span></p>
+    </div>
+  </div>
+
+  <!----------------------------------- previous events image,monthly report,orphange visit  ---------------------------------->
+  <!-- <div class="enents-name">
+    <div class="Voice-pre">
+      <h1>Previous events</h1>
+    </div>
+    <div class="Sactery">
+      <h1>Monthly report</h1>
+    </div>
+    <div class="General-Sactery">
+      <h1>Orphange-visit</h1>
+    </div>
+  </div>
+  <div class="main-div">
+    <div class="p-event" data-aos="fade-right"></div>
+    <div class="monthly-report" data-aos="fade-up"></div>
+    <div class="orphange-visit" data-aos="fade-left"><img src="/public/images/Warm Drive.jpg" alt=""></div>
+  </div> -->
+
+  <div class="reports" style="margin: 0px 115px; padding: 25px 13px; text-decoration: underline;">
+    <h1>Monthly Reports</h1>
+    <div class="row mt-4" id="reports-main">
+      <h5>Reports loading...</h5>
+    </div>
+  </div>
+
+  <!----------------------------------- Counting  ---------------------------------->
+
+  <div class="Counting-Con" style="background-image: url(public/images/salyni.png);">
+
+    <div class="Con-1" data-aos="fade-right">
+      <div class="Circle-1 d-flex flex-column align-items-center">
+        <i class="fa-solid fa-house-flood-water"></i>
+        <span class="num" id="ration-count" style="color: white; font-size: 30px;margin-top: 84px;" data-val="" style="text-align: center;color: white;font-size: 30px;">000</span>
+        <br>
+        <span style="color: white; margin-top: -25px;">Family Rastion</span>
+        <br>
+        <span style="color: white; margin-top: -25px;">(Monthly)</span>
+      </div>
+    </div>
+
+    <div class="Con-1" data-aos="fade-right">
+      <div class="Circle-1 d-flex flex-column align-items-center">
+        <i class="fa-solid fa-school"></i>
+        <span class="num" style="color: white; font-size: 30px;margin-top: 84px;" id="education-count" data-val="" style="text-align: center;color: white;font-size: 30px;">000</span>
+        <br>
+        <span style="color: white; margin-top: -25px;">Education Camp</span>
+        <br>
+        <span style="color: white;margin-top: -25px;">(8-9 Months)</span>
+      </div>
+    </div>
+
+    <div class="Con-1" data-aos="fade-dwon">
+      <div class="Circle-1 d-flex flex-column align-items-center">
+        <i class="fa-solid fa-hands-holding-child"></i>
+        <span class="num" id="orphanage-count" style="color: white; font-size: 30px;margin-top: 84px;" data-val="" style="text-align: center;color: white;font-size: 30px;">000</span>
+        <br>
+        <span style="color: white; margin-top: -25px;">Orphanage visit</span>
+        <br>
+        <span style="color: white; margin-top: -25px;">(Monthly)</span>
+      </div>
+    </div>
+
+    <div class="Con-1" data-aos="fade-left">
+      <div class="Circle-1 d-flex flex-column align-items-center">
+        <i class="fa-solid fa-kit-medical"></i>
+        <span class="num" id="medical-count" style="color: white; font-size: 30px;margin-top: 84px;" data-val="" style="text-align: center;color: white;font-size: 30px;">000</span>
+        <br>
+        <span style="color: white; margin-top: -25px;">Medical</span>
+        <br>
+        <span style="color: white; margin-top: -25px;">(Monthly)</span>
+      </div>
+    </div>
+
+
+    <div class="Con-1" data-aos="fade-left">
+      <div class="Circle-1 d-flex flex-column align-items-center">
+        <i class="fa-solid fa-bowl-food"></i>
+        <span class="num" id="food-count" style="color: white; font-size: 30px;margin-top: 84px;" data-val="" style="text-align: center;color: white;font-size: 30px;">000</span>
+        <br>
+        <span style="color: white; margin-top: -25px;">Food Drive</span>
+        <br>
+        <span style="color: white; margin-top: -25px;">(Monthly)</span>
+      </div>
+    </div>
+  </div>
+
+
+  <!------------------------------------ Footer   ---------------------------------->
+  <section id="footer-container">
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="/public/js/include.js"></script>
+  <script src="/public/js/region.js"></script>
+
+  <!------------------------------------ Counting  ---------------------------------->
+
+  <script>
+     let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) { slideIndex = 1 }
+          if (n < 1) { slideIndex = slides.length }
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex - 1].style.display = "block";
+          dots[slideIndex - 1].className += " active";
+
+        }
+      </script>
+
+      <script>
+        var typed = new Typed(".Auto-Type", {
+          strings: ["Cooked food", "Ration Bags", "Clothes", "Blanket", "Mosquito kit", "Shelter kit"],
+          typeSpeed: 110,
+          backSpeed: 110,
+          loop: true
+
+        })
+      </script>
+
+      <script>
+        let valueDisplays = document.querySelectorAll(".num");
+        let interval = 4000;
+        valueDisplays.forEach((valueDisplay) => {
+          let startValue = 0;
+          let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+          let duration = Math.floor(interval / endValue);
+          let counter = setInterval(function () {
+            if (startValue >= valueDisplay.dataset.val) return;
+
+            startValue += 1;
+            valueDisplay.textContent = startValue;
+            if (startValue == endValue) {
+              clearInterval(counter);
+            }
+          }, duration);
+        });
+  </script>
+
+  <!---------- Our Aos Data------>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init(
+      {
+        offset: 250,
+        duration: 900,
+      }
+    );
+  </script>
+
+</body>
+
+</html>

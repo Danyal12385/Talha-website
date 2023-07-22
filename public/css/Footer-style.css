@@ -1,0 +1,169 @@
+*
+{
+  margin: 0px;
+  padding: 0px;
+}
+body
+{
+    font-family: Verdana, sans-serif;
+}
+
+.Footer
+{
+    height: 600px;
+    width: 100%;
+    background-color: rgb(29, 29, 50);
+    color: white;
+   display: inline-flex;
+}
+.Footer-left
+{ 
+    
+    width:40%;
+    height: 390px;
+/*  border:2px solid red; */
+    color: white; 
+    position: relative;
+}
+
+.Footer-left img
+{
+  
+    border-radius: 50%;
+}
+
+.Footer-left p
+{   
+    font-size: 18px;
+    padding: 90px 130px 0px 30px;
+    word-spacing: 4px  ;
+}
+
+.Footer-middle
+{
+    
+    width: 30%;
+    height: 390px;
+   /* border:2px solid red; */
+    color: white;
+    padding-left: 30px;
+    
+}
+.Footer-middle h1 
+{
+    padding-top: 40px;
+    
+    font-size: 40px;
+}
+.Footer-middle p
+{
+    font-size: 18px;
+    padding-top: 20px;
+    word-spacing: 2px; 
+    padding-right: 20px;
+}
+.fa
+{
+    padding: 12px 21px;
+    font-size: 19px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 15px 8px;
+    border-radius: 60%;
+    text-align: center;
+
+}
+
+.fa::before {
+    margin: 0px -5px !important;
+}
+.fa-facebook
+{
+    background-color:rgb(19, 41, 162);
+    color: white;
+}
+.fa-instagram
+{
+    background-color:rgb(19, 41, 162);
+    color: white;
+}
+.fa-linkedin
+{
+    background-color:rgb(19, 41, 162);
+    color: white;
+}
+.fa-twitter
+{
+    background-color:rgb(19, 41, 162);
+    color: white;
+}
+.Footer-right
+{
+    
+    width:30%;
+    height: 390px;
+   /* border: 2px solid red; */
+    color:white;
+    padding-left: 50px;
+    
+}
+.Footer-right h1 
+{
+    padding-top: 40px;
+    font-size: 40px;
+}
+.Footer-right p
+{
+    font-size: 18px;
+    padding-top: 20px;
+    word-spacing: 2px; 
+    padding-right: 20px;
+}
+.Footer-bottom
+{
+    text-align: center;
+    padding-left: 80px;
+    padding-right: 80px;
+    height:100px;
+   
+    background-color: rgb(29, 29, 50);
+    color: white;
+}
+.Footer-bottom hr
+{
+    color : rgb(225, 212, 212);
+    
+}
+.Footer-bottom p
+{
+    padding-top: 10px;
+}
+.Button-footer button
+{
+    background-color:rgb(39, 185, 185);
+    border: 1px solid rgb(39, 185, 185);
+    color: white;
+    height: 40px;
+    width: 100px;
+    font-size: 16px;
+    border-radius: 9%;
+    margin-left: 20px;
+    margin-top: 90px;
+   margin-right: 140px;
+animation: blinker 2s linear infinite;
+color:white; 
+}
+@keyframes blinker {
+50% {
+  opacity: 0;
+}
+}
+button:hover
+{
+cursor: pointer;
+color: white;
+box-shadow:0 3px 33px 0 aqua ;
+font-weight: bolder;
+animation: blinker step-end;
+}
